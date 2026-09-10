@@ -1,40 +1,81 @@
-# Awesome-Identity-Verification-API
+# 🔐 Awesome Identity Verification API: The Ultimate Guide to KYC, Biometrics, Document OCR & Decentralized Identity
 
-# 🔐 Top Identity Verification APIs
+<p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Identity-Verification-API">
+    <img src="assets/banner.svg" alt="Awesome Identity Verification API Banner" width="100%"/>
+  </a>
+</p>
 
+<p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Identity-Verification-API/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Identity-Verification-API?style=flat-square&logo=github&color=gold" alt="GitHub Stars"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Identity-Verification-API/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Identity-Verification-API?style=flat-square&color=blue" alt="GitHub Forks"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Identity-Verification-API/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-green.svg?style=flat-square" alt="License"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Identity-Verification-API/pulls"><img src="https://img.shields.io/badge/PRs-Welcome-brightgreen.svg?style=flat-square" alt="PRs Welcome"/></a>
+  <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+</p>
 
+---
 
-A curated list of **Identity Verification APIs, KYC/eKYC platforms, document verification systems, biometric verification APIs, and open-source identity-verification projects**.
+A comprehensive, curated directory of **Identity Verification APIs, KYC/eKYC platforms, document verification systems, biometric facial recognition APIs, anti-spoofing / liveness detection models, verifiable credentials, and self-hosted identity verification stacks**.
 
+Identity verification platforms combine **government ID document verification, optical character recognition (OCR), document authenticity checks, selfie verification, 2D/3D face matching, liveness / presentation-attack detection (PAD), AML/PEP screening, synthetic fraud prevention, and identity data enrichment**.
 
+> 💡 **Open-source software is the primary focus of this list.** While fully open-source drop-in replacements for Persona, Veriff, Jumio, or Sumsub are rare, the open-source ecosystem provides robust building blocks for **face recognition, liveness/anti-spoofing, ID OCR, MRZ barcode extraction, KYC workflows, verifiable credentials (W3C DID/VC), and IAM infrastructure** to construct a modern self-hosted verification stack.
 
-Identity verification platforms typically combine **government-ID document verification, OCR, document authenticity checks, selfie verification, face matching, liveness detection, biometric verification, AML/KYC workflows, fraud detection, and identity data enrichment**.
-
-
-
-> **Open-source software is the primary focus of this list.** There are relatively few fully open-source alternatives that reproduce the complete Persona/Veriff/Jumio/Sumsub experience. The open-source ecosystem is therefore strongest around **face verification, liveness/anti-spoofing, OCR, document parsing, KYC workflows, verifiable credentials, and identity infrastructure**, which can be assembled into a self-hosted verification stack.
-
-
+---
 
 ## 📑 Table of Contents
 
-
-
-* [☁️ SaaS/Hosted Platforms](#️-saashosted-platforms)
-
-* [🌍 Open-Source](#-open-source)
-
+* [☁️ SaaS & Hosted Platforms](#️-saas--hosted-platforms)
+* [🌍 Open-Source Repositories (Ranked by Stars)](#-open-source-repositories-ranked-by-stars)
 * [🧩 Open-Source Identity Verification Building Blocks](#-open-source-identity-verification-building-blocks)
-
-* [🪪 Open Identity Standards & Protocols](#-open-identity-standards--protocols)
-
+  * [🪪 ID Document OCR & Barcode Extraction](#-id-document-ocr--barcode-extraction)
+  * [👤 Face Recognition & Biometric Matching](#-face-recognition--biometric-matching)
+  * [🛡️ Liveness Detection & Anti-Spoofing (PAD)](#️-liveness-detection--anti-spoofing-pad)
+  * [📄 Document Authenticity & Security Analysis](#-document-authenticity--security-analysis)
+  * [🔑 Identity & Access Management (IAM / Auth)](#-identity--access-management-iam--auth)
+* [🪪 Open Identity Standards & Protocols (DID / VC)](#-open-identity-standards--protocols-did--vc)
 * [🏗️ Building a Self-Hosted Identity Verification Stack](#️-building-a-self-hosted-identity-verification-stack)
-
-* [🔍 Commercial vs Open-Source](#-commercial-vs-open-source)
-
+* [🔍 Commercial SaaS vs Open-Source Comparison](#-commercial-saas-vs-open-source-comparison)
+* [⭐ Recommended Open-Source Projects to Explore First](#-recommended-open-source-projects-to-explore-first)
+* [🚧 Key Industry & Open-Source Challenges](#-key-industry--open-source-challenges)
+* [📈 Star History](#-star-history)
 * [🤝 How to Contribute](#-how-to-contribute)
+* [⚠️ Disclaimer & Compliance Notes](#️-disclaimer--compliance-notes)
 
-* [⚠️ Disclaimer](#️-disclaimer)
+---
+
+## ☁️ SaaS & Hosted Platforms
+
+> 📊 **Market Size & Structure Analysis (2024–2032):** The global Identity Verification (IDV) market is estimated at **$12.5+ Billion in 2025–2026** and projected to exceed **$30+ Billion by 2032** (~15.4% CAGR). The sector is **moderately-to-highly fragmented** (not a winner-take-all market) due to distinct sovereign regulatory mandates, regional government ID template variations, local AML/PEP database exclusivity, and specialized vertical requirements across banking, fintech, crypto, e-commerce, healthcare, and the gig economy.
+
+*The table below is sorted descending by company scale (market valuation / parent revenue).*
+
+| Platform | Valuation / Company Scale | Description | Primary Focus | Pricing | Free Tier / Trial Limits |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| [Stripe Identity](https://stripe.com/identity) | **$159 Billion** Valuation | Identity-verification product integrated with Stripe for document and biometric verification and fraud checks. | Payments, KYC | $1.50 per document + selfie check ($0.50 per ID number check), pay-as-you-go | First 50 live verifications free (one-time allowance); unlimited free Stripe Test Mode sandbox |
+| [LexisNexis Risk Solutions](https://risk.lexisnexis.com/) | **$85 Billion** Parent (RELX) Cap / $3.5B+ Rev | Enterprise identity and fraud-risk infrastructure combining identity intelligence, ThreatMetrix, and InstantID analytics. | Identity Intelligence, Fraud | Starts at ~$0.50–$2.50 per transaction / InstantID check (~$5,000–$20,000/yr commit) | 7 to 30-day proof-of-concept (POC) trial upon sales negotiation |
+| [Experian Identity](https://www.experian.com/business/products/identity-verification.html) | **~$35 Billion** Market Cap / $7.1B Rev | Identity verification and fraud-prevention services based on credit bureau signals and CrossCore orchestration. | Identity Verification, Fraud | Starts at ~$0.50–$2.00 per verification check for CrossCore/Precise ID (consumer IdentityWorks from $9.99/mo) | 14-day free trial / test credits for data quality APIs; 7-day free trial for consumer IdentityWorks |
+| [Plaid Identity Verification](https://plaid.com/products/identity-verification/) | **$8.0 Billion** Valuation / ~$540M ARR | Identity-verification infrastructure combining document, database, and biometric signals for frictionless onboarding. | Fintech, KYC | Starts at ~$1.00–$2.00 per verification (tiered volume rates) | Free unlimited sandbox testing using simulated test identities |
+| [Socure](https://www.socure.com/) | **$5.2 Billion** Valuation / $364M ARR | Digital identity verification and fraud-prevention platform using identity intelligence, DocV, and predictive ML scoring. | Digital Identity, Fraud | Starts at ~$0.50–$2.00 per evaluation (Socure Launch offers $1,000/mo startup credits) | Free developer sandbox (up to 1,000 test requests/day) + $1,000/mo credits for startups via Socure Launch |
+| [Trulioo](https://www.trulioo.com/) | **$1.8 Billion** Valuation / ~$150M ARR | Global identity verification and business verification platform providing identity data, document verification, and KYC/KYB. | Global Identity Data, KYC/KYB | Starts at $99/mo platform base fee (~$1.00–$3.00/verification based on volume) | Developer sandbox access with mock test entities upon sales onboarding |
+| [Persona](https://withpersona.com/) | **$1.5 Billion** Valuation (Series C) | Configurable identity infrastructure platform providing KYC/KYB, document verification, biometrics, and automated workflows. | Identity Verification, KYC/KYB | Starts at $250/mo (Essential Plan, ~$1.50/verification) | 60-day free trial (up to 50 live verifications; unlimited sandbox) or 500 free verifications/mo for 1 yr via Startup Program |
+| [Veriff](https://www.veriff.com/) | **$1.5 Billion** Valuation (Series C) | Global identity-verification platform combining AI document verification, biometric facial recognition, and automated checks. | ID Verification, Fraud Prevention | Starts at $49/mo minimum commitment (~$0.80/verification for Essential; $99/mo for Plus at ~$1.39/verification) | 15-day free trial with up to 50 live verification sessions (no credit card required) |
+| [Incode](https://incode.com/) | **$1.25 Billion** Valuation (Unicorn) | AI-first identity platform offering automated document verification, biometric verification, passive liveness, and onboarding. | Biometric Identity, KYC | Starts at ~$1.50–$3.00/verification (~$12,000/yr enterprise commit) | Evaluation POC & sandbox trial upon sales request |
+| [Jumio](https://www.jumio.com/) | **~$1.2 Billion** Valuation / ~$180M Rev | Enterprise identity-verification platform supporting document verification, biometric verification, liveness, KYC, and AML. | Enterprise KYC, Biometrics | Starts at ~$1.00–$2.50/verification ($10,000–$50,000/yr enterprise commit) | 30-day developer sandbox access & evaluation POC upon sales request |
+| [GBG](https://www.gbgplc.com/) | **~$1.0 Billion** Market Cap (£750M) | Global identity intelligence and verification platform supporting ID3global, digital onboarding, and fraud compliance. | Identity Intelligence | Starts at ~£1,000/yr platform base fee + ~£0.50–£2.00 per verification check | Free pilot/sandbox test environment with mock data upon sales registration |
+| [Ekata](https://ekata.com/) | **$850 Million** (Acquired by Mastercard) | Identity intelligence platform providing global identity data, graph risk signals, and Proximity APIs for fraud detection. | Identity Intelligence | Starts at $200/mo for Pro Insight / Identity Check API packages (~$0.10–$0.50/query) | Free developer sandbox access with mock data via Mastercard Developers portal |
+| [Onfido](https://www.onfido.com/) | **~$500 Million** (Acquired by Entrust) | Digital identity verification platform providing document verification, biometric face verification, and workflow automation. | ID + Biometric Verification | Starts at ~$1.20–$2.50/verification (~$5,000/yr enterprise commit) | Free developer sandbox & guided product tour/POC upon sales approval |
+| [Mitek Systems](https://www.miteksystems.com/) | **~$450 Million** Market Cap (NASDAQ: MITK) | Digital identity and document-verification technology supporting mobile check deposit, Mobile Verify, and ID capture. | ID Document Verification | Starts at ~$1.00–$2.50 per verification (~$10,000–$25,000/yr enterprise commit) | Interactive walkthrough & sales-assisted sandbox POC upon demo request |
+| [AU10TIX](https://www.au10tix.com/) | **~$350 Million** Valuation (TPG backed) | Identity verification and fraud-prevention platform focused on automated document authentication and risk intelligence. | ID Verification, Fraud | Starts at $500/mo minimum commitment (~$1.00–$2.50/verification) | Free demo environment & compliance risk assessment tools upon sales request |
+| [Sumsub](https://sumsub.com/) | **~$300 Million** Valuation / ~$50M+ ARR | All-in-one verification platform covering KYC, KYB, AML screening, transaction monitoring, and fraud prevention. | KYC/KYB, AML, Fraud | Starts at $149/mo minimum commitment ($1.35/verification for Basic; $299/mo min at $1.85/verification for Compliance) | 14-day free trial with 50 free verifications |
+| [IDnow](https://www.idnow.io/) | **~$250 Million** Valuation | European identity platform providing automated AutoIdent, VideoIdent, eID, document verification, and AML compliance. | European Identity, KYC | Starts at ~€1.20–€3.50/verification (~€5.00–€10.00+ for VideoIdent) | Free developer test sandbox upon partner onboarding (free for end users) |
+| [Veridas](https://veridas.com/) | **~$100 Million** Valuation (BBVA JV) | Biometric identity platform focused on modular face and voice biometrics, document verification, and NIST-tested algorithms. | Biometrics | Starts at ~$0.80–$2.00 per verification (pay-as-you-go available on AWS Marketplace) | Free product demo & partner sandbox access upon request |
+| [Footprint](https://www.footprint.com/) | **~$80–$100 Million** Valuation | Developer-first identity verification and secure PII vaulting infrastructure for frictionless KYC/KYB onboarding. | Digital Identity, KYC | Starts at ~$1.00–$2.00 per verification check (pay-as-you-go) | Free developer sandbox with unlimited mock verifications and risk evaluations |
+| [Facephi](https://facephi.com/) | **~$82 Million** Market Cap (BME: FACE) | Digital identity and biometric onboarding platform with multi-modal facial recognition, liveness, and digital onboarding. | Digital Identity, Biometrics | Starts at ~$1.00–$3.00 per verification (~$10,000/yr enterprise commit) | Free custom demo & proof-of-concept (POC) sandbox upon sales consultation |
+| [ID-Pal](https://www.id-pal.com/) | **~$50 Million** Valuation (Series A) | Turnkey digital identity verification platform supporting document capture, facial recognition, and AML screening. | KYC/KYB | Starts at ~$299/mo (includes base monthly check bundle; ~$1.50–$3.00/check additional) | Guided product demo & sandbox evaluation upon sales request |
+| [DigiLocker](https://www.digilocker.gov.in/) | **Government Public Infrastructure** | India's national digital credential platform allowing 300M+ citizens to access and share 6B+ government-verified documents. | Digital Documents, India | 100% Free (₹0) for citizens & government requestors via API Setu (~₹1–₹5/txn via 3rd-party aggregators) | Free forever for all citizens (up to 1 GB cloud storage) & free API calls via API Setu |
 
 
 
@@ -42,106 +83,46 @@ Identity verification platforms typically combine **government-ID document verif
 
 
 
-## ☁️ SaaS/Hosted Platforms
+## 🌍 Open-Source Repositories (Ranked by Stars)
 
+> ⭐ **The open-source ecosystem provides building blocks for document OCR, face matching, liveness detection, and identity infrastructure.**
 
+*The table below is sorted descending by GitHub star count.*
 
-| Platform | Description | Primary Focus | Pricing | Free Tier / Trial Limits |
-| ------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------- | ------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------- |
-| [Persona](https://withpersona.com/) | Identity infrastructure platform providing identity verification, KYC/KYB, document verification, biometrics, fraud detection, and configurable verification workflows. | Identity Verification, KYC/KYB | Starts at $250/mo (Essential Plan, ~$1.50/verification) | 60-day free trial (up to 50 live verifications; unlimited sandbox) or 500 free verifications/mo for 1 yr via Startup Program |
-| [Veriff](https://www.veriff.com/) | Global identity-verification platform combining document verification, biometric verification, fraud detection, and automated identity checks. | ID Verification, Fraud Prevention | Starts at $49/mo minimum commitment (~$0.80/verification for Essential; $99/mo for Plus at ~$1.39/verification) | 15-day free trial with up to 50 live verification sessions (no credit card required) |
-| [Jumio](https://www.jumio.com/) | Enterprise identity-verification platform supporting document verification, biometric verification, liveness, KYC, AML, and fraud prevention. | Enterprise KYC, Biometrics | Starts at ~$1.00–$2.50/verification ($10,000–$50,000/yr enterprise commit) | 30-day developer sandbox access & evaluation POC upon sales request |
-| [Onfido](https://www.onfido.com/) | Digital identity verification platform providing document verification, biometric face verification, and identity assurance APIs. | ID + Biometric Verification | Starts at ~$1.20–$2.50/verification (~$5,000/yr enterprise commit) | Free developer sandbox & guided product tour/POC upon sales approval |
-| [Sumsub](https://sumsub.com/) | Global verification platform covering KYC, KYB, AML, identity verification, fraud prevention, transaction monitoring, and compliance workflows. | KYC/KYB, AML, Fraud | Starts at $149/mo minimum commitment ($1.35/verification for Basic; $299/mo min at $1.85/verification for Compliance) | 14-day free trial with 50 free verifications |
-| [Trulioo](https://www.trulioo.com/) | Global identity verification and business verification platform providing identity data, document verification, KYC/KYB, and AML capabilities. | Global Identity Data, KYC/KYB | Starts at $99/mo platform base fee (~$1.00–$3.00/verification based on volume) | Developer sandbox access with mock test entities upon sales onboarding |
-| [Incode](https://incode.com/) | AI-powered identity platform offering document verification, biometric verification, liveness detection, fraud prevention, and onboarding. | Biometric Identity, KYC | Starts at ~$1.50–$3.00/verification (~$12,000/yr enterprise commit) | Evaluation POC & sandbox trial upon sales request |
-| [IDnow](https://www.idnow.io/) | European identity platform providing automated and expert-assisted identity verification, eID, document verification, AML, and fraud prevention. | European Identity, KYC | Starts at ~€1.20–€3.50/verification (~€5.00–€10.00+ for VideoIdent) | Free developer test sandbox upon partner onboarding (free for end users) |
-| [AU10TIX](https://www.au10tix.com/) | Identity verification and fraud-prevention platform focused on automated document authentication, identity verification, and risk intelligence. | ID Verification, Fraud | Starts at $500/mo minimum commitment (~$1.00–$2.50/verification) | Free demo environment & compliance risk assessment tools upon sales request |
-| [Socure](https://www.socure.com/) | Digital identity verification and fraud-prevention platform using identity intelligence, document verification, biometric signals, and risk scoring. | Digital Identity, Fraud | Starts at ~$0.50–$2.00 per evaluation (Socure Launch offers $1,000/mo startup credits) | Free developer sandbox (up to 1,000 test requests/day) + $1,000/mo credits for startups via Socure Launch |
-| [Stripe Identity](https://stripe.com/identity) | Identity-verification product integrated with Stripe for document and biometric verification and identity checks. | Payments, KYC | $1.50 per document + selfie check ($0.50 per ID number check), pay-as-you-go | First 50 live verifications free (one-time allowance); unlimited free Stripe Test Mode sandbox |
-| [Plaid Identity Verification](https://plaid.com/products/identity-verification/) | Identity-verification infrastructure combining document, database, and biometric signals for onboarding and fraud prevention. | Fintech, KYC | Starts at ~$1.00–$2.00 per verification (tiered volume rates) | Free unlimited sandbox testing using simulated test identities |
-| [DigiLocker](https://www.digilocker.gov.in/) | India's digital document platform enabling users to access and share digitally issued identity and government documents. | Digital Documents, India | 100% Free (₹0) for citizens & government requestors via API Setu (~₹1–₹5/txn via 3rd-party aggregators) | Free forever for all citizens (up to 1 GB cloud storage) & free API calls via API Setu |
-| [ID-Pal](https://www.id-pal.com/) | Digital identity verification platform supporting document verification, facial recognition, AML screening, and business verification. | KYC/KYB | Starts at ~$299/mo (includes base monthly check bundle; ~$1.50–$3.00/check additional) | Guided product demo & sandbox evaluation upon sales request |
-| [Veridas](https://veridas.com/) | Biometric identity platform focused on face and voice biometrics, document verification, and identity assurance. | Biometrics | Starts at ~$0.80–$2.00 per verification (pay-as-you-go available on AWS Marketplace) | Free product demo & partner sandbox access upon request |
-| [Facephi](https://facephi.com/) | Digital identity and biometric onboarding platform with facial recognition, liveness, and identity verification capabilities. | Digital Identity, Biometrics | Starts at ~$1.00–$3.00 per verification (~$10,000/yr enterprise commit) | Free custom demo & proof-of-concept (POC) sandbox upon sales consultation |
-| [Mitek](https://www.miteksystems.com/) | Digital identity and document-verification technology supporting mobile capture, ID verification, and fraud prevention. | ID Document Verification | Starts at ~$1.00–$2.50 per verification (~$10,000–$25,000/yr enterprise commit) | Interactive walkthrough & sales-assisted sandbox POC upon demo request |
-| [GBG](https://www.gbgplc.com/) | Identity intelligence and verification platform supporting digital onboarding, identity data, fraud prevention, and compliance. | Identity Intelligence | Starts at ~£1,000/yr platform base fee + ~£0.50–£2.00 per verification check | Free pilot/sandbox test environment with mock data upon sales registration |
-| [LexisNexis Risk Solutions](https://risk.lexisnexis.com/) | Identity and fraud-risk infrastructure combining identity intelligence, verification, authentication, and risk analytics. | Identity Intelligence, Fraud | Starts at ~$0.50–$2.50 per transaction / InstantID check (~$5,000–$20,000/yr commit) | 7 to 30-day proof-of-concept (POC) trial upon sales negotiation |
-| [Experian Identity Verification](https://www.experian.com/business/products/identity-verification.html) | Identity verification and fraud-prevention services based on identity data and risk signals. | Identity Verification, Fraud | Starts at ~$0.50–$2.00 per verification check for CrossCore/Precise ID (consumer IdentityWorks from $9.99/mo) | 14-day free trial / test credits for data quality APIs; 7-day free trial for consumer IdentityWorks |
-| [Ekata](https://ekata.com/) | Identity intelligence platform providing global identity data and risk signals for digital onboarding and fraud prevention. | Identity Intelligence | Starts at $200/mo for Pro Insight / Identity Check API packages (~$0.10–$0.50/query) | Free developer sandbox access with mock data via Mastercard Developers portal |
-| [Footprint](https://www.footprint.com/) | Digital identity and KYC infrastructure for account creation, identity verification, fraud prevention, and authentication. | Digital Identity, KYC | Starts at ~$1.00–$2.00 per verification check (pay-as-you-go) | Free developer sandbox with unlimited mock verifications and risk evaluations |
-
-
-
----
-
-
-
-## 🌍 Open-Source
-
-
-
-> ⭐ **This is the primary section of this repository.**
-
->
-
-> Fully open-source replacements for Persona, Veriff, Jumio, or Sumsub are still relatively uncommon. However, several projects provide substantial parts of the underlying technology required to construct a self-hosted identity-verification API.
-
-
-
-| Project                                                                                     | Description                                                                                                                                                                                                                                                         | Best Use                                 |
-
-| ------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------- |
-
-| [FaceOnLive ID-Verification-OpenKYC](https://github.com/FaceOnLive/ID-Verification-OpenKYC) | OpenKYC community project combining face recognition, face liveness/anti-spoofing, ID document recognition, and identity-verification functionality.                                                                                                                | ⭐ Full KYC Prototype                     |
-
-| [CompreFace](https://github.com/exadel-inc/CompreFace)                                      | Apache-2.0 open-source face-recognition service with REST APIs for face recognition, face verification, face detection, landmarks, head pose, and related capabilities.                                                                                             | ⭐ Face Verification API                  |
-
-| [OpenKYC](https://openkyc.org/open-source)                                                  | Open identity-verification infrastructure project centered on wallets, issuer/verifier SDKs, verifiable credentials, OpenID4VC/VP, and self-hosted identity infrastructure. Its repositories are planned to be released under Apache 2.0 but are currently private. | ⭐ Open Identity / KYC Infrastructure     |
-
-| [InsightFace](https://github.com/deepinsight/insightface)                                   | Open-source face-analysis and recognition toolkit containing modern face-recognition, detection, alignment, and embedding models.                                                                                                                                   | ⭐ Face Recognition                       |
-
-| [DeepFace](https://github.com/serengil/deepface)                                            | Open-source Python framework wrapping multiple face-recognition and facial-analysis models with APIs for verification, recognition, and analysis.                                                                                                                   | Face Verification                        |
-
-| [face_recognition](https://github.com/ageitgey/face_recognition)                            | Python face-recognition library built on dlib, providing simple face encoding and face-comparison APIs.                                                                                                                                                             | Face Matching                            |
-
-| [DeepFaceLab](https://github.com/iperov/DeepFaceLab)                                        | Open-source face-processing/deep-learning framework with extensive face extraction and recognition-related tooling.                                                                                                                                                 | Computer Vision Research                 |
-
-| [PaddleOCR](https://github.com/PaddlePaddle/PaddleOCR)                                      | Open-source OCR toolkit supporting document text detection, recognition, layout analysis, and multilingual document processing.                                                                                                                                     | ⭐ ID OCR                                 |
-
-| [docTR](https://github.com/mindee/doctr)                                                    | Open-source deep-learning library for optical character recognition and document text extraction.                                                                                                                                                                   | OCR / Document Processing                |
-
-| [EasyOCR](https://github.com/JaidedAI/EasyOCR)                                              | Open-source OCR library supporting many languages and document/image text extraction.                                                                                                                                                                               | OCR                                      |
-
-| [Tesseract OCR](https://github.com/tesseract-ocr/tesseract)                                 | Open-source OCR engine widely used for extracting text from identity documents and scanned images.                                                                                                                                                                  | OCR Infrastructure                       |
-
-| [OpenCV](https://github.com/opencv/opencv)                                                  | Open-source computer-vision library useful for image processing, document detection, cropping, quality assessment, and preprocessing.                                                                                                                               | Computer Vision                          |
-
-| [MediaPipe](https://github.com/google-ai-edge/mediapipe)                                    | Open-source framework providing face detection, landmarks, tracking, and other perception capabilities.                                                                                                                                                             | Face Detection / Liveness Building Block |
-
-| [OpenMMLab](https://github.com/open-mmlab)                                                  | Collection of open-source computer-vision frameworks covering detection, recognition, segmentation, and related tasks.                                                                                                                                              | Computer Vision                          |
-
-| [PaddleDetection](https://github.com/PaddlePaddle/PaddleDetection)                          | Open-source object-detection toolkit useful for detecting document boundaries and visual features.                                                                                                                                                                  | Document Detection                       |
-
-| [Ultralytics](https://github.com/ultralytics/ultralytics)                                   | Open-source computer-vision framework supporting object detection and other vision workloads.                                                                                                                                                                       | Document / Face Detection                |
-
-| [Veramo](https://github.com/decentralized-identity/veramo)                                  | Open-source framework for decentralized identity and verifiable credentials.                                                                                                                                                                                        | ⭐ Decentralized Identity                 |
-
-| [OpenWallet Foundation](https://github.com/openwallet-foundation)                           | Open-source ecosystem for digital wallets and interoperable identity credentials.                                                                                                                                                                                   | Digital Identity                         |
-
-| [SpruceID](https://github.com/spruceid)                                                     | Open-source decentralized identity and verifiable-credential ecosystem.                                                                                                                                                                                             | Verifiable Credentials                   |
-
-| [Credo](https://github.com/openwallet-foundation/credo-ts)                                  | TypeScript framework for building decentralized identity and verifiable-credential applications.                                                                                                                                                                    | DID / Credentials                        |
-
-| [Keycloak](https://github.com/keycloak/keycloak)                                            | Open-source identity and access-management system supporting authentication, identity federation, and authorization.                                                                                                                                                | Authentication                           |
-
-| [Authentik](https://github.com/goauthentik/authentik)                                       | Open-source identity provider and authentication platform.                                                                                                                                                                                                          | Identity Infrastructure                  |
-
-| [ZITADEL](https://github.com/zitadel/zitadel)                                               | Open-source identity and access-management platform supporting authentication and user identity infrastructure.                                                                                                                                                     | IAM                                      |
-
-| [Authentik](https://github.com/goauthentik/authentik)                                       | Self-hosted identity provider with modern authentication and identity-management capabilities.                                                                                                                                                                      | IAM                                      |
-
-| [privacyIDEA](https://github.com/privacyidea/privacyidea)                                   | Open-source authentication and multi-factor authentication platform.                                                                                                                                                                                                | Identity Authentication                  |
+| Repository | GitHub Stars Badge | Description | Category / Best Use |
+| :--- | :--- | :--- | :--- |
+| [opencv/opencv](https://github.com/opencv/opencv) | [![GitHub stars](https://img.shields.io/github/stars/opencv/opencv?style=social&color=white)](https://github.com/opencv/opencv/stargazers) | Open-source computer-vision library essential for image preprocessing, document perspective transform, cropping, and quality filtering. | 🖼️ Computer Vision Core |
+| [PaddlePaddle/PaddleOCR](https://github.com/PaddlePaddle/PaddleOCR) | [![GitHub stars](https://img.shields.io/github/stars/PaddlePaddle/PaddleOCR?style=social&color=white)](https://github.com/PaddlePaddle/PaddleOCR/stargazers) | Modern OCR toolkit supporting multilingual text detection, recognition, layout analysis, and document parsing across 100+ languages. | ⭐ ID Document OCR |
+| [tesseract-ocr/tesseract](https://github.com/tesseract-ocr/tesseract) | [![GitHub stars](https://img.shields.io/github/stars/tesseract-ocr/tesseract?style=social&color=white)](https://github.com/tesseract-ocr/tesseract/stargazers) | The industry-standard open-source OCR engine widely used for extracting alphanumeric characters from identity documents. | 📄 Document Text Extraction |
+| [ultralytics/ultralytics](https://github.com/ultralytics/ultralytics) | [![GitHub stars](https://img.shields.io/github/stars/ultralytics/ultralytics?style=social&color=white)](https://github.com/ultralytics/ultralytics/stargazers) | Real-time object detection and instance segmentation framework for detecting ID card boundaries, face crops, and barcodes. | 🎯 ID & Face Detection |
+| [ageitgey/face_recognition](https://github.com/ageitgey/face_recognition) | [![GitHub stars](https://img.shields.io/github/stars/ageitgey/face_recognition?style=social&color=white)](https://github.com/ageitgey/face_recognition/stargazers) | Simple Python facial recognition API built on dlib with deep learning models for face encoding and matching. | 👤 Face Matching API |
+| [naptha/tesseract.js](https://github.com/naptha/tesseract.js) | [![GitHub stars](https://img.shields.io/github/stars/naptha/tesseract.js?style=social&color=white)](https://github.com/naptha/tesseract.js/stargazers) | Pure JavaScript port of Tesseract OCR allowing client-side in-browser ID document text extraction without server uploads. | 🌐 In-Browser OCR |
+| [google-ai-edge/mediapipe](https://github.com/google-ai-edge/mediapipe) | [![GitHub stars](https://img.shields.io/github/stars/google-ai-edge/mediapipe?style=social&color=white)](https://github.com/google-ai-edge/mediapipe/stargazers) | Real-time cross-platform ML framework by Google for 468-point 3D face mesh, landmark tracking, and active liveness verification. | 👁️ Face Mesh & Liveness |
+| [keycloak/keycloak](https://github.com/keycloak/keycloak) | [![GitHub stars](https://img.shields.io/github/stars/keycloak/keycloak?style=social&color=white)](https://github.com/keycloak/keycloak/stargazers) | Open-source enterprise identity and access management (IAM) server supporting OpenID Connect, OAuth 2.0, and SAML 2.0. | 🔑 Identity & Auth Server |
+| [zxing/zxing](https://github.com/zxing/zxing) | [![GitHub stars](https://img.shields.io/github/stars/zxing/zxing?style=social&color=white)](https://github.com/zxing/zxing/stargazers) | Multi-format barcode image processing library supporting PDF417 driver licenses, QR codes, and MRZ data formats. | 🪪 Barcode & PDF417 Parser |
+| [open-mmlab/mmdetection](https://github.com/open-mmlab/mmdetection) | [![GitHub stars](https://img.shields.io/github/stars/open-mmlab/mmdetection?style=social&color=white)](https://github.com/open-mmlab/mmdetection/stargazers) | Deep learning object detection toolbox providing state-of-the-art architectures for document layout and security feature detection. | 🔍 Document Layout Analysis |
+| [JaidedAI/EasyOCR](https://github.com/JaidedAI/EasyOCR) | [![GitHub stars](https://img.shields.io/github/stars/JaidedAI/EasyOCR?style=social&color=white)](https://github.com/JaidedAI/EasyOCR/stargazers) | PyTorch-based ready-to-use OCR library supporting 80+ languages and complex multilingual identity document scripts. | 📄 Multilingual OCR |
+| [deepinsight/insightface](https://github.com/deepinsight/insightface) | [![GitHub stars](https://img.shields.io/github/stars/deepinsight/insightface?style=social&color=white)](https://github.com/deepinsight/insightface/stargazers) | State-of-the-art 2D/3D face analysis toolkit with ArcFace/CosFace models for high-accuracy face verification and anti-spoofing. | ⭐ SOTA Face Recognition |
+| [goauthentik/authentik](https://github.com/goauthentik/authentik) | [![GitHub stars](https://img.shields.io/github/stars/goauthentik/authentik?style=social&color=white)](https://github.com/goauthentik/authentik/stargazers) | Modern self-hosted identity provider and authentication layer supporting LDAP, SAML, OAuth2, and customizable verification flows. | 🛡️ Identity Infrastructure |
+| [serengil/deepface](https://github.com/serengil/deepface) | [![GitHub stars](https://img.shields.io/github/stars/serengil/deepface?style=social&color=white)](https://github.com/serengil/deepface/stargazers) | Lightweight Python facial analysis library wrapping VGG-Face, Google FaceNet, OpenFace, DeepFace, DeepID, ArcFace, and SFace. | 👤 Face Verification Wrapper |
+| [iperov/DeepFaceLab](https://github.com/iperov/DeepFaceLab) | [![GitHub stars](https://img.shields.io/github/stars/iperov/DeepFaceLab?style=social&color=white)](https://github.com/iperov/DeepFaceLab/stargazers) | Leading deep learning face extraction and synthesis pipeline, crucial for synthetic face research and deepfake detection training. | 🤖 Deepfake Research |
+| [justadudewhohacks/face-api.js](https://github.com/justadudewhohacks/face-api.js) | [![GitHub stars](https://img.shields.io/github/stars/justadudewhohacks/face-api.js?style=social&color=white)](https://github.com/justadudewhohacks/face-api.js/stargazers) | JavaScript API for face detection and face recognition in the browser and Node.js using TensorFlow.js. | 🌐 Browser Face Biometrics |
+| [supertokens/supertokens-core](https://github.com/supertokens/supertokens-core) | [![GitHub stars](https://img.shields.io/github/stars/supertokens/supertokens-core?style=social&color=white)](https://github.com/supertokens/supertokens-core/stargazers) | Open-source user authentication and session management system with passwordless login, social auth, and MFA support. | 🔑 User Authentication |
+| [zitadel/zitadel](https://github.com/zitadel/zitadel) | [![GitHub stars](https://img.shields.io/github/stars/zitadel/zitadel?style=social&color=white)](https://github.com/zitadel/zitadel/stargazers) | Cloud-native identity infrastructure and IAM platform supporting Passkeys, FIDO2/WebAuthn, and audit logging. | 🔑 Cloud-Native IAM |
+| [davisking/dlib](https://github.com/davisking/dlib) | [![GitHub stars](https://img.shields.io/github/stars/davisking/dlib?style=social&color=white)](https://github.com/davisking/dlib/stargazers) | Landmark C++ machine learning toolkit providing high-performance HOG/CNN face detectors and 68-point shape predictors. | 📐 Landmark Extraction |
+| [PaddlePaddle/PaddleDetection](https://github.com/PaddlePaddle/PaddleDetection) | [![GitHub stars](https://img.shields.io/github/stars/PaddlePaddle/PaddleDetection/stargazers)](https://github.com/PaddlePaddle/PaddleDetection/stargazers) | Object detection toolkit for document corner localization, card rectification, and visual tampering detection. | 🔍 Document Detection |
+| [casdoor/casdoor](https://github.com/casdoor/casdoor) | [![GitHub stars](https://img.shields.io/github/stars/casdoor/casdoor?style=social&color=white)](https://github.com/casdoor/casdoor/stargazers) | UI-first IAM platform and authentication server supporting Face ID login, WebAuthn, OAuth, OIDC, and SAML. | 🛡️ IAM & Face Login |
+| [davidsandberg/facenet](https://github.com/davidsandberg/facenet) | [![GitHub stars](https://img.shields.io/github/stars/davidsandberg/facenet?style=social&color=white)](https://github.com/davidsandberg/facenet/stargazers) | Classic TensorFlow implementation of Google FaceNet for 128-d face embedding generation and Euclidean similarity scoring. | 👤 Face Embedding Model |
+| [ory/kratos](https://github.com/ory/kratos) | [![GitHub stars](https://img.shields.io/github/stars/ory/kratos?style=social&color=white)](https://github.com/ory/kratos/stargazers) | Headless cloud-native authentication and identity management system in Go supporting Passkeys, OIDC, and multi-factor auth. | 🔑 Headless Auth Engine |
+| [exadel-inc/CompreFace](https://github.com/exadel-inc/CompreFace) | [![GitHub stars](https://img.shields.io/github/stars/exadel-inc/CompreFace?style=social&color=white)](https://github.com/exadel-inc/CompreFace/stargazers) | Self-hosted face recognition REST API server with web UI for face verification, landmark detection, and subject management. | ⭐ Self-Hosted Face API |
+| [TadasBaltrusaitis/OpenFace](https://github.com/TadasBaltrusaitis/OpenFace) | [![GitHub stars](https://img.shields.io/github/stars/TadasBaltrusaitis/OpenFace?style=social&color=white)](https://github.com/TadasBaltrusaitis/OpenFace/stargazers) | Advanced facial behavior toolkit providing facial landmark detection, head pose estimation, and eye-gaze tracking. | 👁️ Gaze & Head Pose |
+| [mindee/doctr](https://github.com/mindee/doctr) | [![GitHub stars](https://img.shields.io/github/stars/mindee/doctr?style=social&color=white)](https://github.com/mindee/doctr/stargazers) | Seamless deep-learning library for OCR and document text recognition supporting PyTorch and TensorFlow backends. | 📄 Document Text Parser |
+| [minivision-ai/Silent-Face-Anti-Spoofing](https://github.com/minivision-ai/Silent-Face-Anti-Spoofing) | [![GitHub stars](https://img.shields.io/github/stars/minivision-ai/Silent-Face-Anti-Spoofing?style=social&color=white)](https://github.com/minivision-ai/Silent-Face-Anti-Spoofing/stargazers) | Real-time silent face anti-spoofing algorithms detecting presentation attacks like printed photos and screen replays. | 🛡️ Passive Anti-Spoofing |
+| [privacyidea/privacyidea](https://github.com/privacyidea/privacyidea) | [![GitHub stars](https://img.shields.io/github/stars/privacyidea/privacyidea?style=social&color=white)](https://github.com/privacyidea/privacyidea/stargazers) | Complete multi-factor authentication (MFA) system supporting 2FA, OTP tokens, FIDO2/WebAuthn, and push notifications. | 🔐 Multi-Factor Auth |
+| [decentralized-identity/veramo](https://github.com/decentralized-identity/veramo) | [![GitHub stars](https://img.shields.io/github/stars/decentralized-identity/veramo?style=social&color=white)](https://github.com/decentralized-identity/veramo/stargazers) | Modular JavaScript/TypeScript framework for decentralized identity, DIDs, and W3C Verifiable Credentials. | 🪪 Verifiable Credentials |
+| [FaceOnLive/ID-Verification-OpenKYC](https://github.com/FaceOnLive/ID-Verification-OpenKYC) | [![GitHub stars](https://img.shields.io/github/stars/FaceOnLive/ID-Verification-OpenKYC?style=social&color=white)](https://github.com/FaceOnLive/ID-Verification-OpenKYC/stargazers) | Complete open KYC community pipeline combining face recognition, liveness detection, and ID document recognition. | ⭐ End-to-End OpenKYC |
+| [openwallet-foundation/credo-ts](https://github.com/openwallet-foundation/credo-ts) | [![GitHub stars](https://img.shields.io/github/stars/openwallet-foundation/credo-ts?style=social&color=white)](https://github.com/openwallet-foundation/credo-ts/stargazers) | TypeScript framework by the OpenWallet Foundation for building interoperable DID wallets and verifiable credential agents. | 🪪 DID Wallet Agent |
+| [spruceid/ssi](https://github.com/spruceid/ssi) | [![GitHub stars](https://img.shields.io/github/stars/spruceid/ssi?style=social&color=white)](https://github.com/spruceid/ssi/stargazers) | Rust-based core library for decentralized identity, DID resolution, and W3C verifiable credential issuance and validation. | 🪪 Decentralized Identity Core |
 
 
 
@@ -861,60 +842,52 @@ Contributions are welcome! Please help expand this list with:
 
 
 
+## 📈 Star History
+
+##  Star History
+[![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-Identity-Verification-API&type=date&legend=top-left)](https://star-history.dera.page/#ishandutta2007/Awesome-Identity-Verification-API&type=date&legend=top-left)
+
 ---
 
+## 🤝 How to Contribute
 
+Contributions are welcome! Please help expand this list with:
 
-## ⚠️ Disclaimer
+* 🔐 Open-source identity-verification APIs & KYC platforms
+* 👤 SOTA face-recognition, face-matching & biometric models
+* 🛡️ Anti-spoofing, liveness detection & deepfake detection models
+* 📄 ID-document OCR, layout analysis & MRZ/barcode parsers
+* 🪪 W3C Verifiable Credentials & Decentralized Identifier (DID) SDKs
+* 🌐 Digital identity wallets & open identity protocols
+* 🏗️ Self-hosted identity & verification infrastructure stacks
 
+### 📋 Contribution Guidelines
 
+1. Fork this repository.
+2. Add the project to the appropriate section.
+3. Prefer projects with an active repository and a clearly stated license.
+4. Clearly distinguish **fully open-source software**, **open-core software**, **research projects**, **datasets**, and **open standards**.
+5. Do not classify commercial APIs as open-source merely because they provide a free tier.
+6. Submit a pull request.
 
-This repository is a **curated software directory**, not legal, financial, compliance, or security advice.
+---
 
+## ⚠️ Disclaimer & Compliance Notes
 
+This repository is a **curated technical directory**, not legal, financial, compliance, or security advice.
 
-Identity verification is a highly sensitive domain. Before deploying an open-source identity-verification stack in production, organizations should independently evaluate:
+Identity verification is a highly regulated and sensitive domain. Before deploying an open-source identity-verification stack in production, organizations should independently evaluate:
 
+* 🔒 **Biometric Data Regulations:** GDPR Article 9 (Special Category Data), CCPA/CPRA, Illinois BIPA, Texas CUBI, Washington H.B. 1493
+* 📜 **KYC/AML Directives:** FinCEN Customer Due Diligence (CDD), EU AMLD5/AMLD6, FATF Travel Rule
+* 🛡️ **Biometric Standards:** ISO/IEC 30107-3 Presentation Attack Detection (iBeta Level 1 & 2), NIST FRVT benchmarks
+* 🔐 **Security & Audits:** SOC 2 Type II, ISO 27001, End-to-End Encryption, Zero-Knowledge proofs
+* 📊 **Performance Metrics:** False Acceptance Rate (FAR), False Rejection Rate (FRR), Demographic parity and bias testing
 
+---
 
-* Privacy requirements
+<p align="center">
+  <b>Awesome Identity Verification API</b> • Curated with ❤️ for developers and identity architects<br>
+  <sub>Index: Identity Verification API • KYC API • eKYC • Biometrics • Face Recognition • Liveness Detection • Anti-Spoofing • Document OCR • Verifiable Credentials • DID • AML Screening • Fraud Prevention</sub>
+</p>
 
-* Biometric-data regulations
-
-* Data retention
-
-* Data residency
-
-* Consent requirements
-
-* Encryption
-
-* Access controls
-
-* Audit logging
-
-* Bias and demographic performance
-
-* False acceptance rates
-
-* False rejection rates
-
-* Presentation-attack resistance
-
-* Identity-document coverage
-
-* KYC/AML obligations
-
-* Local regulatory requirements
-
-
-
-An open-source face-recognition or OCR project should **not automatically be considered equivalent to a regulated commercial KYC/identity-verification service**.
-
-
-
-Also note that some open-source projects may have licenses, model restrictions, dataset restrictions, or third-party dependencies that affect commercial use.
-
-
-
-**Last updated: August 2026**
